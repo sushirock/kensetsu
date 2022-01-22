@@ -1,0 +1,399 @@
+@charset "UFT-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// ヘッダー
+
+header{
+
+    background-image: url(f_27_topimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 500px;
+
+    #header-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+       
+    }
+
+
+    h1{
+        width: 150px;
+    }
+
+    ul{
+        display: flex;
+
+        li{
+            padding-right: 30px;
+            
+
+            a{
+                color: #fff;
+                transition: ease all 2s;
+            }
+        }
+
+        a:hover{
+            color: rgb(64, 66, 233);
+        }
+    }
+
+    #site-title{
+        text-align: center;
+        width: 100%;
+        font-size: 4rem;
+        margin-top: 100px;
+    }
+}
+
+// メイン
+
+#news{
+
+    width: 700px;
+    margin: 0 auto;
+
+    h2{
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    dl{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    dt{
+        font-size: 1rem;
+        width: 25%;
+        border-bottom: #000 solid 1px;
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    dd{
+        font-size: 1rem;
+        width: 75%;
+        margin: 0;
+        border-bottom: #000 solid 1px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+
+        span{
+            display: inline-block;
+            border: solid 1px #000;
+            padding-right: 10px 10px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            
+            
+        }
+    }
+}
+
+#jirei{
+
+    h2{
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    #jirei-flex{
+        display: flex;
+        justify-content: space-between;
+
+        #left{
+            img{
+                width: 400px;
+            }
+
+            .title{
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            .eria{
+                text-align: center;
+            }
+
+            .syousai{
+
+                text-align: center;
+                img{
+                    width: 300px;
+                }
+            }
+        }
+
+        #right{
+            img{
+                width: 400px;
+            }
+
+            .title{
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            .eria{
+                text-align: center;
+            }
+
+            .syousai{
+
+                text-align: center;
+                img{
+                    width: 300px;
+                }
+            }
+        }
+        
+    }
+
+    #btn{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 200px;
+
+        a{
+            border: solid 1px #000;
+            padding: 20px 30px;
+        }
+    }
+}
+
+// イメージ
+
+#image{
+    display: flex;
+    justify-content: space-between;
+
+    #kigyo{
+        width: 33%;
+
+
+        a{
+            transition: all ease 1s;
+        }
+
+
+
+    }
+
+    a:hover{
+        opacity: 0.7;
+    }
+
+
+
+    #saiyo{
+        width: 33%;
+
+        a{
+            transition: all ease 1s;
+        }
+
+        a:hover{
+            opacity: 0.7;
+        }
+ 
+    }
+
+    #contact{
+        width: 33%;
+
+        a{
+            transition: all ease 1s;
+
+        }
+
+        a:hover{
+            opacity: 0.7;
+        }
+
+    }
+
+    
+}
+
+// フッター
+
+footer{
+    background: #000;
+    color: #fff;
+
+    #footer-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #footer-left{
+            width: 150px;
+        }
+
+        #footer-right{
+
+            ul{
+                display: flex;
+
+                li{
+                    padding-right: 30px;
+                }
+
+                a{
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
+
+    small{
+        display: block;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+// レスポンシブ
+
+
+@media screen and (max-width:800px) {
+
+    header{
+
+        h1{
+            width: 80px;
+            margin-left: 30px;
+        }
+        
+
+
+        ul{
+            display: none;
+        }
+
+        #site-title{
+            font-size: 2rem;
+        }
+    }
+
+    #news{
+        margin-right: 0;
+        max-width: 100%;
+        font-size: 0.75rem;
+        margin-left: 30px;
+
+        h2{
+            text-align: center;
+        }
+
+        dl{
+            flex-direction: column;
+
+            dt{
+                border-bottom: none;
+            }
+        }
+    }
+
+
+    #jirei{
+
+        #jirei-flex{
+            flex-direction: column;
+
+            #left{
+                width: 100%;
+                
+                img{
+                    padding-left: 30px;
+                }
+            }
+
+            #right{
+                width: 100%;
+                margin-top: 50px;
+                
+                img{
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    #image{
+        flex-direction: column;
+
+        #kigyo{
+            width: 100%;
+        }
+
+        #saiyo{
+            width: 100%;
+        }
+
+        #contact{
+            width: 100%;
+        }
+    }
+
+    #footer-flex{
+        flex-direction: column-reverse;
+
+        ul{
+            margin-top: 30px;
+            flex-direction: column;
+            margin-bottom: 10px;
+            text-align: center;
+
+            li{
+                margin-top: 5px;
+            }
+        }
+    }
+
+
+    .wrap{
+        overflow: hidden;
+    }
+
+}
+

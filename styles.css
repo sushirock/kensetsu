@@ -1,0 +1,365 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(f_27_topimg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+}
+
+header #header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  width: 150px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  padding-right: 30px;
+}
+
+header ul li a {
+  color: #fff;
+  -webkit-transition: ease all 2s;
+  transition: ease all 2s;
+}
+
+header ul a:hover {
+  color: #4042e9;
+}
+
+header #site-title {
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  margin-top: 100px;
+}
+
+#news {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#news h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#news dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#news dt {
+  font-size: 1rem;
+  width: 25%;
+  border-bottom: #000 solid 1px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+#news dd {
+  font-size: 1rem;
+  width: 75%;
+  margin: 0;
+  border-bottom: #000 solid 1px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+#news dd span {
+  display: inline-block;
+  border: solid 1px #000;
+  padding-right: 10px 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+#jirei h2 {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#jirei #jirei-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#jirei #jirei-flex #left img {
+  width: 400px;
+}
+
+#jirei #jirei-flex #left .title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#jirei #jirei-flex #left .eria {
+  text-align: center;
+}
+
+#jirei #jirei-flex #left .syousai {
+  text-align: center;
+}
+
+#jirei #jirei-flex #left .syousai img {
+  width: 300px;
+}
+
+#jirei #jirei-flex #right img {
+  width: 400px;
+}
+
+#jirei #jirei-flex #right .title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#jirei #jirei-flex #right .eria {
+  text-align: center;
+}
+
+#jirei #jirei-flex #right .syousai {
+  text-align: center;
+}
+
+#jirei #jirei-flex #right .syousai img {
+  width: 300px;
+}
+
+#jirei #btn {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+#jirei #btn a {
+  border: solid 1px #000;
+  padding: 20px 30px;
+}
+
+#image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#image #kigyo {
+  width: 33%;
+}
+
+#image #kigyo a {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+#image a:hover {
+  opacity: 0.7;
+}
+
+#image #saiyo {
+  width: 33%;
+}
+
+#image #saiyo a {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+#image #saiyo a:hover {
+  opacity: 0.7;
+}
+
+#image #contact {
+  width: 33%;
+}
+
+#image #contact a {
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+#image #contact a:hover {
+  opacity: 0.7;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+}
+
+footer #footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #footer-flex #footer-left {
+  width: 150px;
+}
+
+footer #footer-flex #footer-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #footer-flex #footer-right ul li {
+  padding-right: 30px;
+}
+
+footer #footer-flex #footer-right ul a {
+  color: #fff;
+}
+
+footer small {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  header h1 {
+    width: 80px;
+    margin-left: 30px;
+  }
+  header ul {
+    display: none;
+  }
+  header #site-title {
+    font-size: 2rem;
+  }
+  #news {
+    margin-right: 0;
+    max-width: 100%;
+    font-size: 0.75rem;
+    margin-left: 30px;
+  }
+  #news h2 {
+    text-align: center;
+  }
+  #news dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #news dl dt {
+    border-bottom: none;
+  }
+  #jirei #jirei-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #jirei #jirei-flex #left {
+    width: 100%;
+  }
+  #jirei #jirei-flex #left img {
+    padding-left: 30px;
+  }
+  #jirei #jirei-flex #right {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #jirei #jirei-flex #right img {
+    padding-left: 30px;
+  }
+  #image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #image #kigyo {
+    width: 100%;
+  }
+  #image #saiyo {
+    width: 100%;
+  }
+  #image #contact {
+    width: 100%;
+  }
+  #footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #footer-flex ul {
+    margin-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #footer-flex ul li {
+    margin-top: 5px;
+  }
+  .wrap {
+    overflow: hidden;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
